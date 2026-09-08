@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { SiteEmailLink } from "@/components/SiteEmailLink";
 import { PhoneField, formatPhoneFromFormData } from "./PhoneField";
 import { trackConversionEvent } from "@/lib/analytics";
+import { submitNetlifyForm } from "@/lib/submitNetlifyForm";
 
 export function ContactForm() {
   const router = useRouter();
@@ -49,6 +50,17 @@ export function ContactForm() {
       });
 
       if (res.ok) {
+        try {
+          await submitNetlifyForm("contact", {
+            name: fullName,
+            email,
+            phone: phone || undefined,
+            organisation: payload.organisation || undefined,
+            message: payload.message || undefined,
+          });
+        } catch {
+          // Webhook already stored the enquiry; don't block the visitor.
+        }
         trackConversionEvent("form_submit_success");
         router.push("/thank-you");
       } else {
@@ -65,10 +77,19 @@ export function ContactForm() {
 
   return (
     <form
+      name="contact"
+      method="POST"
+      action="/__forms.html"
       onSubmit={handleSubmit}
       onFocus={markFormStarted}
       className="min-w-0 space-y-5"
     >
+      <input type="hidden" name="form-name" value="contact" />
+      <p className="hidden" aria-hidden="true">
+        <label>
+          Do not fill this out: <input name="bot-field" tabIndex={-1} autoComplete="off" />
+        </label>
+      </p>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="min-w-0">
           <label htmlFor="name" className={labelClass}>
