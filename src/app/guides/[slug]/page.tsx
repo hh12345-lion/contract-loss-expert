@@ -20,6 +20,7 @@ export async function generateMetadata({
     title: guide.metaTitle,
     description: guide.metaDescription,
     path: `/guides/${slug}`,
+    ogImage: guide.image,
   });
 }
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
@@ -33,6 +34,7 @@ export function GuidePageTemplate({
       datePublished: guide.datePublished,
       dateModified: guide.dateModified,
       aboutServiceId: guide.aboutServiceId,
+      image: guide.image,
     }),
     faqPageSchema(guide.faqs),
   ];
@@ -47,6 +49,18 @@ export function GuidePageTemplate({
       />
       <Section>
         <article className="prose-content mx-auto max-w-3xl">
+          {guide.image ? (
+            <div className="relative mb-8 aspect-[16/9] w-full overflow-hidden rounded-lg bg-[#F5F0E8]">
+              <Image
+                src={guide.image}
+                alt={guide.imageAlt ?? guide.h1}
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 768px"
+              />
+            </div>
+          ) : null}
           {guide.paragraphs.slice(1).map((p, i) => (
             <p key={i} className="text-body leading-relaxed">
               {p}

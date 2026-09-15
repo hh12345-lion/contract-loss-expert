@@ -19,4 +19,7 @@ export interface GuidePage extends ContentPage {
   sections: { heading: string; content: string }[];
   datePublished: string;
   dateModified: string;
+  /** Optional featured image path under /public */
+  image?: string;
+  imageAlt?: string;
 }

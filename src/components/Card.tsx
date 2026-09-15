@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -5,12 +6,32 @@ interface CardProps {
   title: string;
   description?: string;
   href?: string;
+  image?: string;
+  imageAlt?: string;
   children?: ReactNode;
 }
 
-export function Card({ title, description, href, children }: CardProps) {
+export function Card({
+  title,
+  description,
+  href,
+  image,
+  imageAlt,
+  children,
+}: CardProps) {
   const inner = (
     <>
+      {image ? (
+        <div className="relative mb-4 aspect-[16/10] w-full overflow-hidden rounded-md bg-[#F5F0E8]">
+          <Image
+            src={image}
+            alt={imageAlt ?? title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        </div>
+      ) : null}
       <h3 className="font-display text-lg font-semibold text-heading">{title}</h3>
       {description && (
         <p className="mt-2 text-body leading-relaxed">{description}</p>

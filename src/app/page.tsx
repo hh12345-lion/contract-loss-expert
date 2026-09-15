@@ -65,7 +65,7 @@ export default function HomePage() {
       <JsonLd data={homepageSchema} />
       <PageHero
         title="Contract Loss Expert Witness Services"
-        subtitle="When a contract is breached, the financial loss must be quantified with precision and defended under cross-examination. We connect law firms and legal teams worldwide with qualified contract loss expert witnesses — forensic accountants, quantum experts, and economic damages specialists — for litigation, tribunals, and international arbitration."
+        subtitle="When a contract is breached, the financial loss must be quantified with precision and defended under cross-examination. We connect law firms and legal teams worldwide with qualified contract loss expert witnesses: forensic accountants, quantum experts, and economic damages specialists for litigation, tribunals, and international arbitration."
       />
       <Section>
         <div>
@@ -134,7 +134,7 @@ export default function HomePage() {
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Card
             title="Types of Contract Loss"
-            description="Expectation, reliance, and consequential loss — the pillar guide for legal practitioners."
+            description="Expectation, reliance, and consequential loss: the pillar guide for legal practitioners."
             href="/loss-types"
           />
           <Card
@@ -149,7 +149,7 @@ export default function HomePage() {
           />
           <Card
             title="Legal Guides"
-            description="Hadley v Baxendale, but-for methodology, construction quantum, and instruction letters."
+            description="Financial evidence for claims, Hadley v Baxendale, but-for methodology, construction quantum, and instruction letters."
             href="/guides"
           />
           <Card

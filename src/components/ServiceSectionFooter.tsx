@@ -11,6 +11,10 @@ const FOOTER_BY_SERVICE: Record<
   "lost-profits": [
     { href: "/loss-types#expectation-loss", label: "Expectation loss explained" },
     { href: "/guides/lost-profits-but-for-methodology", label: "But-for methodology guide" },
+    {
+      href: "/guides/what-financial-evidence-needed-to-support-claim",
+      label: "Financial evidence for claims",
+    },
     { href: "/case-types/commercial-contract-breach", label: "Commercial contract breach" },
   ],
   "wasted-expenditure": [

@@ -39,6 +39,7 @@ export function articleSchema({
   datePublished = "2025-01-15",
   dateModified = "2025-05-26",
   aboutServiceId,
+  image,
 }: {
   headline: string;
   description: string;
@@ -46,6 +47,7 @@ export function articleSchema({
   datePublished?: string;
   dateModified?: string;
   aboutServiceId?: string;
+  image?: string;
 }): object {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -55,6 +57,7 @@ export function articleSchema({
     url: `${SITE_URL}${path}`,
     datePublished,
     dateModified,
+    inLanguage: "en-US",
     author: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -66,6 +69,10 @@ export function articleSchema({
       url: SITE_URL,
     },
   };
+
+  if (image) {
+    schema.image = [`${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`];
+  }
 
   if (aboutServiceId) {
     schema.about = {
@@ -83,7 +90,7 @@ export const organizationSchema = {
   name: SITE_NAME,
   url: SITE_URL,
   email: SITE_EMAIL,
-  areaServed: "Worldwide",
+  areaServed: "United States",
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
@@ -101,7 +108,7 @@ export function professionalServiceSchema(
     "@id": `${SITE_URL}/#service`,
     name: "Contract Loss Expert Witness",
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: "Worldwide",
+    areaServed: "United States",
     serviceType: "Contract Loss Expert Witness",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -145,7 +152,7 @@ export function serviceNode(
     name,
     description,
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: "Worldwide",
+    areaServed: "United States",
   };
 }
 

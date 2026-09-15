@@ -10,7 +10,7 @@ import { guides } from "@/data/guides";
 export const metadata = createMetadata({
   title: "Legal Guides: Contract Loss Expert Witnesses | Quantum & Damages",
   description:
-    "In-depth guides for legal teams on contract loss expert witnesses, lost profits methodology, Hadley v Baxendale, construction quantum, and more.",
+    "In-depth guides for legal teams on contract loss expert witnesses, financial evidence for claims, lost profits methodology, Hadley v Baxendale, construction quantum, and more.",
   path: "/guides",
 });
 
@@ -25,7 +25,7 @@ export default function GuidesPage() {
       />
       <PageHero
         title="Legal Guides: Contract Loss Expert Witnesses"
-        subtitle="Practical guides on instructing quantum experts, lost profits methodology, remoteness of damage, construction claims, and professional negligence loss quantification."
+        subtitle="Practical guides on financial evidence for contract loss claims, instructing quantum experts, lost profits methodology, remoteness of damage, construction claims, and professional negligence loss quantification."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Guides" },
@@ -39,6 +39,8 @@ export default function GuidesPage() {
               title={g.title}
               description={g.metaDescription.slice(0, 140) + "…"}
               href={`/guides/${g.slug}`}
+              image={g.image}
+              imageAlt={g.imageAlt}
             />
           ))}
         </div>

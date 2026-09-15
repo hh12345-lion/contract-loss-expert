@@ -64,8 +64,8 @@ export default function TermsPage() {
 
           <h2>Governing Law</h2>
           <p>
-            These terms are governed by the laws of England and Wales. The courts
-            of England and Wales have exclusive jurisdiction.
+            These terms are governed by the laws of the United States. The courts
+            of the United States have exclusive jurisdiction.
           </p>
 
           <h2>Contact</h2>

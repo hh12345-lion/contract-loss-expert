@@ -2,6 +2,180 @@ import type { GuidePage } from "./types";
 
 const guides: GuidePage[] = [
   {
+    slug: "what-financial-evidence-needed-to-support-claim",
+    title: "Financial Evidence for Contract Loss Claims",
+    h1: "What Financial Evidence Is Needed to Support a Contract Loss Claim?",
+    metaTitle:
+      "Financial Evidence Needed to Support a Contract Loss Claim | Guide",
+    metaDescription:
+      "What financial evidence supports a contract loss claim: management accounts, ledgers, forecasts, invoices, lost profits records, construction quantum documents, and how experts use them.",
+    aboutServiceId: "lost-profits",
+    datePublished: "2026-09-15",
+    dateModified: "2026-09-15",
+    image: "/images/guides/financial-evidence-contract-loss.jpg",
+    imageAlt:
+      "Professional reviewing stamped financial documents with a calculator while preparing evidence for a contract loss claim",
+    paragraphs: [
+      "A contract loss claim may involve substantial financial information. Depending on the dispute, a party may need to explain the loss being claimed, how the amount has been calculated, and what evidence supports the figures and assumptions used.",
+      "Financial evidence can form an important part of a contract loss assessment. The documents required will vary according to the contract, the alleged breach, the nature of the loss and the issues being considered.",
+      "A contract loss expert may be instructed to analyse financial records and other relevant evidence when assessing the quantum of a dispute. The scope of that work will depend on the instructions and the circumstances of the particular case.",
+      "This guide considers some of the financial evidence that may be relevant when assessing a contractual loss claim.",
+    ],
+    sections: [
+      {
+        heading: "Why Financial Evidence Matters in a Contract Loss Claim",
+        content:
+          "A loss calculation will generally need to be supported by evidence rather than relying solely on an estimated figure.\n\nFor example, a lost profits claim may require consideration of actual trading results, relevant costs, expected revenue and other factors affecting the business.\n\nSimilarly, a claim involving additional expenditure may require documents showing what was spent, when the expenditure was incurred and why it is said to be relevant to the loss being considered.\n\nFinancial evidence can help establish the figures used in a loss calculation and allow the assumptions behind those figures to be examined.\n\nFinancial evidence does not, by itself, determine whether a loss is legally recoverable. Questions concerning liability, causation, contractual interpretation and recoverability are matters for the appropriate legal decision-maker.\n\nFor a broader overview of different categories of contractual loss, see the Types of Contract Loss guide on this site.",
+      },
+      {
+        heading: "Common Types of Financial Evidence",
+        content:
+          "The documents relevant to a claim will depend on the loss being assessed. Common categories include management accounts, statutory accounts, general ledger and transaction records, budgets and forecasts, invoices and purchase records, bank statements, and payroll and staffing records.",
+      },
+      {
+        heading: "Management Accounts",
+        content:
+          "Management accounts may provide information about revenue, costs, margins and financial performance over particular periods.\n\nWhere a claim concerns reduced trading or profitability, these records may help an expert understand how the business was performing before and after the relevant event.\n\nTheir usefulness may depend on how they were prepared, the periods covered and whether the figures can be reconciled with other financial records.",
+      },
+      {
+        heading: "Statutory Accounts",
+        content:
+          "Statutory accounts can provide historical information about a company's financial position and performance.\n\nThey may be relevant when considering longer-term trading patterns, profitability and changes in financial performance.\n\nAn expert may also compare statutory accounts with other financial records where differences in presentation or accounting treatment need to be understood.",
+      },
+      {
+        heading: "General Ledger and Transaction Records",
+        content:
+          "General ledger information can provide more detailed evidence about income and expenditure.\n\nDepending on the dispute, transaction-level information may help identify revenue received or invoiced, direct and indirect costs, additional expenditure, payments to suppliers, payroll costs, professional fees, and other relevant financial transactions.\n\nDetailed records can be useful where a claim contains several heads of loss or where individual costs need to be examined.",
+      },
+      {
+        heading: "Budgets and Financial Forecasts",
+        content:
+          "Budgets and forecasts may be relevant where the claimed loss concerns financial performance that might have occurred in the future.\n\nAn expert may consider how a forecast was prepared, the information available when it was created and whether its assumptions can be supported by contemporaneous evidence.\n\nA forecast prepared after a dispute has arisen may require careful consideration because it may incorporate information that was not available at the relevant earlier date.\n\nThis does not necessarily make a later forecast unreliable. Its evidential value will depend on the circumstances and the assumptions underlying it.",
+      },
+      {
+        heading: "Invoices, Purchase Records and Bank Statements",
+        content:
+          "Invoices, purchase orders and supplier records can help establish actual expenditure. These records may be relevant to claims involving additional costs, replacement arrangements, wasted expenditure or other financial losses.\n\nWhere expenditure is said to have resulted from a contractual breach, the relationship between the expenditure and the circumstances of the dispute may also need to be examined.\n\nBank statements can provide evidence of payments and receipts. They may assist in checking whether particular transactions occurred and in reconciling information contained in accounting records. Bank statements may not, by themselves, explain the commercial purpose of a transaction, so other supporting documents may also be relevant.",
+      },
+      {
+        heading: "Payroll and Staffing Records",
+        content:
+          "Payroll information may be relevant where a loss calculation includes employee costs.\n\nDepending on the circumstances, records may include salaries, employer costs, overtime, temporary staff or other employment-related expenditure.\n\nThe relevance of these records will depend on the nature of the loss being assessed.",
+      },
+      {
+        heading: "Evidence for Lost Profits Claims",
+        content:
+          "Lost profits can involve a counterfactual assessment because the analysis may need to consider what financial performance might have occurred if the relevant breach or event had not happened. This may require more than simply comparing profits from two periods.\n\nPotentially relevant evidence can include historical sales and profit information, customer or contract records, sales forecasts, pricing information, cost data, order books, business plans, capacity information, industry or market information, and records relating to comparable transactions.\n\nThe appropriate evidence will depend on the business and the particular loss being considered.",
+      },
+      {
+        heading: "Historical Trading Performance and Contract Records",
+        content:
+          "Historical financial performance may provide a starting point for understanding previous revenue, costs and margins. However, past performance does not necessarily establish what would have happened in the counterfactual scenario. Changes in market conditions, customer demand, pricing, competition, capacity and other factors may also need to be considered.\n\nCustomer contracts, orders, invoices and sales records may help establish revenue associated with a particular business relationship. They may also provide information about pricing, volumes, contract duration and expected transactions.\n\nThe relevant contractual terms should be considered alongside financial records because the scope and duration of the claimed opportunity may depend on the underlying agreement.",
+      },
+      {
+        heading: "Cost Information in Lost Profits Assessments",
+        content:
+          "A lost revenue figure is not necessarily the same as lost profit. A loss calculation may need to consider costs that would have been incurred if the additional revenue had been generated.\n\nDepending on the circumstances, this could involve variable costs, additional staffing, production costs, distribution expenses or other expenditure. The appropriate treatment of costs will depend on the facts and the methodology used for the assessment.\n\nFor further context on how a counterfactual may be considered in a lost profits assessment, see the Types of Contract Loss guide and the lost profits but-for methodology guide on this site.",
+      },
+      {
+        heading: "Evidence for Additional Costs and Expenditure",
+        content:
+          "Some contract disputes involve expenditure said to have resulted from a breach or contractual failure.\n\nRelevant documents may include supplier invoices, purchase orders, replacement contract documents, internal accounting records, payroll records, professional fee invoices, transport and logistics records, project cost records, and payment confirmations.\n\nThe existence of expenditure alone may not establish the basis of a claimed loss. The assessment may also need to consider whether the expenditure is connected to the loss being claimed and whether the amount can be supported by the available evidence.",
+      },
+      {
+        heading: "Evidence for Construction Contract Losses",
+        content:
+          "Construction disputes can involve detailed financial records covering project costs, variations, delay-related expenditure, disruption and other matters.\n\nDepending on the dispute, potentially relevant evidence may include contract and subcontract records, applications for payment, valuations, payment certificates, variation records, project cost reports, labour records, plant records, material invoices, programme information, site records, delay records, and overhead information.\n\nFinancial records may need to be considered alongside project documentation because the circumstances giving rise to a claimed loss may not be apparent from accounting records alone. Separate information on construction quantum disputes is available under case types on this site.",
+      },
+      {
+        heading: "Evidence for Supply and Distribution Disputes",
+        content:
+          "Supply and distribution disputes can involve losses associated with interrupted supply, replacement purchases, reduced sales or additional operating costs.\n\nDepending on the circumstances, relevant evidence may include purchase orders, supplier invoices, delivery records, inventory records, sales data, customer orders, replacement supply agreements, pricing records, freight and logistics costs, and stock records.\n\nComparing actual transactions with arrangements that existed before the disputed event may help an expert assess the financial effect being considered. Supply chain loss analysis is covered under services on this site.",
+      },
+      {
+        heading: "The Importance of Contemporaneous Evidence",
+        content:
+          "Documents created during the relevant period may provide useful context for understanding the financial position and commercial circumstances at the time.\n\nExamples can include internal management reports, board papers, business plans, budgets, emails concerning financial performance, sales forecasts, customer correspondence, project reports, and contract records.\n\nContemporaneous documents do not automatically establish that a particular loss occurred or that a particular calculation is correct. Their relevance and reliability will depend on the circumstances.",
+      },
+      {
+        heading: "Reconciling Different Financial Records",
+        content:
+          "Financial information may exist in several forms. For example, management accounts, statutory accounts, general ledger records and bank statements may contain related information but present it differently.\n\nWhere this occurs, an expert may need to understand the reasons for differences and determine which records are relevant to the particular calculation.\n\nA reconciliation exercise may help identify differences in accounting periods, accruals and prepayments, classification differences, missing transactions, duplicate entries, changes in accounting treatment, and differences between forecast and actual figures.\n\nThis can be important where the loss calculation depends on several sources of financial information.",
+      },
+      {
+        heading: "What If Some Financial Evidence Is Missing?",
+        content:
+          "Financial records are not always complete.\n\nDocuments may have been lost, accounting systems may have changed, or information may not have been retained for the relevant period. In some disputes, certain figures may therefore need to be reconstructed from the records that remain available.\n\nAlternative sources might include bank statements, invoices, tax records, customer records, supplier information or other business documentation.\n\nAny reconstruction would generally need to make its limitations clear. Where assumptions are necessary, those assumptions may need to be identified and supported where possible.",
+      },
+      {
+        heading: "Evidence and the Assumptions Behind a Loss Calculation",
+        content:
+          "A financial loss calculation may depend on assumptions about revenue, costs, timing, growth, customer behaviour or other factors. The supporting evidence should therefore be considered alongside the assumptions used.\n\nFor example, if a claim assumes that a particular level of sales would have continued for several years, relevant evidence might include historical sales, customer contracts, order patterns and other information bearing on that assumption.\n\nSome loss assessments involve genuine uncertainty, particularly where they concern future events. Material assumptions should therefore be identifiable and capable of being examined against the available evidence.",
+      },
+      {
+        heading: "Preparing Financial Evidence for Expert Review",
+        content:
+          "Early organisation of financial records can help structure the assessment process.\n\nLegal teams and parties may wish to identify: (1) the specific heads of loss being claimed; (2) the financial periods relevant to each head of loss; (3) the accounting records available for those periods; (4) the underlying contracts and transaction records; (5) any forecasts, budgets or business plans being relied upon; (6) documents supporting individual expenditure items; (7) significant gaps or inconsistencies in the records; and (8) the assumptions currently being used in the loss calculation.\n\nThe precise documents required will depend on the dispute and the questions the expert has been instructed to address. The guide to instructing a contract loss expert provides further information about the types of documents that may be relevant when an expert is instructed.",
+      },
+      {
+        heading: "How a Contract Loss Expert May Use Financial Evidence",
+        content:
+          "A contract loss expert may be instructed to analyse financial information relevant to the quantum of a dispute.\n\nDepending on the scope of the instructions, this may involve reviewing accounting records, testing calculations, analysing historical performance, assessing assumptions and considering alternative financial scenarios.\n\nThe expert's analysis should remain within the scope of the expert's expertise and instructions. Legal questions concerning liability, contractual interpretation and legal entitlement are generally matters for the appropriate legal decision-maker.\n\nMore information about the role and scope of expert evidence is available in the expert witness qualifications guidance on this site.",
+      },
+      {
+        heading: "Final Considerations",
+        content:
+          "There is no single set of financial documents that will apply to every contract loss claim.\n\nThe relevant evidence will depend on the type of loss, the contractual arrangements, the period under consideration and the issues that need to be addressed.\n\nAccounting records such as management accounts, statutory accounts, ledgers, invoices and bank statements may provide important financial information. Contracts, forecasts, business records and contemporaneous documents may also be relevant, particularly where the assessment involves future or counterfactual financial performance.\n\nWhere financial evidence is incomplete or assumptions are required, the limitations and basis of the calculation should be made clear.\n\nA structured review of the available evidence can help identify which figures can be supported, which assumptions require further examination and where uncertainty remains.\n\nThis article provides general information about financial evidence in contract loss disputes. It is not legal, accounting or expert advice and does not determine whether any particular item of loss is recoverable. The evidence required in a specific matter will depend on its facts, contractual terms, applicable law and the issues being considered.",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "What financial documents are typically needed for a contract loss claim?",
+        answer:
+          "Common documents include management accounts, statutory accounts, general ledger and transaction records, budgets and forecasts, invoices and purchase records, bank statements, and payroll records. The precise set depends on the heads of loss, the contract, and the period under review.",
+      },
+      {
+        question:
+          "Can a contract loss claim proceed if some financial records are missing?",
+        answer:
+          "Yes, but gaps usually need to be addressed carefully. Experts may reconstruct figures from alternative sources such as bank statements, invoices, tax records or supplier information, and should identify assumptions and limitations clearly.",
+      },
+      {
+        question:
+          "Does financial evidence decide whether a loss is legally recoverable?",
+        answer:
+          "No. Financial evidence supports quantum and assumptions. Liability, causation, contractual interpretation and recoverability remain matters for the appropriate legal decision-maker.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/loss-types",
+        label: "Types of Contract Loss",
+      },
+      {
+        href: "/guides/lost-profits-but-for-methodology",
+        label: "Lost Profits But-For Methodology",
+      },
+      {
+        href: "/how-to-instruct",
+        label: "How to Instruct an Expert",
+      },
+      {
+        href: "/qualifications",
+        label: "Expert Qualifications",
+      },
+      {
+        href: "/case-types",
+        label: "Case Types Including Construction Quantum",
+      },
+      {
+        href: "/services",
+        label: "Contract Loss Services",
+      },
+    ],
+  },
+  {
     slug: "hadley-v-baxendale-remoteness-guide",
     title: "Hadley v Baxendale & Remoteness Guide",
     h1: "Hadley v Baxendale & Remoteness of Damage: A Solicitor's Guide",
@@ -380,7 +554,7 @@ const guides: GuidePage[] = [
       {
         heading: "Engagement Terms and Timetable",
         content:
-          "Engagement terms should be agreed in writing before work commences, including scope, deliverables, payment terms, and what happens if scope expands.\n\nContingency fees for expert witnesses are prohibited — the expert must not have an interest in the outcome. Confirm this expressly.\n\nSet realistic timetables with milestones: initial assessment and document request list (within 2 weeks); draft report (allow 4–8 weeks depending on complexity); final report after comments; availability for joint expert meeting and oral evidence. Urgent matters require compressed timetables — confirm availability upfront.",
+          "Engagement terms should be agreed in writing before work commences, including scope, deliverables, payment terms, and what happens if scope expands.\n\nContingency fees for expert witnesses are prohibited: the expert must not have an interest in the outcome. Confirm this expressly.\n\nSet realistic timetables with milestones: initial assessment and document request list (within 2 weeks); draft report (allow 4-8 weeks depending on complexity); final report after comments; availability for joint expert meeting and oral evidence. Urgent matters require compressed timetables. Confirm availability upfront.",
       },
       {
         heading: "CPR Part 35 Requirements and SJE Joint Instructions",

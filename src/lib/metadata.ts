@@ -5,7 +5,7 @@ const OG_IMAGE = {
   url: "/opengraph-image",
   width: 1200,
   height: 630,
-  alt: "ContractLossExpert — contract loss expert witness services",
+  alt: "ContractLossExpert: contract loss expert witness services",
 };
 
 /** Neutral English + x-default */
@@ -26,12 +26,14 @@ export function createMetadata({
   path = "",
   noindex = false,
   nofollow = false,
+  ogImage,
 }: {
   title: string;
   description: string;
   path?: string;
   noindex?: boolean;
   nofollow?: boolean;
+  ogImage?: string;
 }): Metadata {
   const robots =
     noindex || nofollow
@@ -40,6 +42,14 @@ export function createMetadata({
 
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
   const bingVerification = process.env.BING_SITE_VERIFICATION;
+  const image = ogImage
+    ? {
+        url: ogImage,
+        width: 1200,
+        height: 630,
+        alt: title,
+      }
+    : { ...OG_IMAGE, alt: "ContractLossExpert: contract loss expert witness services" };
 
   return {
     title,
@@ -51,15 +61,15 @@ export function createMetadata({
       description,
       url: `${SITE_URL}${path}`,
       siteName: "ContractLossExpert",
-      locale: "en",
-      type: "website",
-      images: [OG_IMAGE],
+      locale: "en_US",
+      type: path.startsWith("/guides/") ? "article" : "website",
+      images: [image],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [OG_IMAGE.url],
+      images: [image.url],
     },
     robots,
     ...(googleVerification && {
