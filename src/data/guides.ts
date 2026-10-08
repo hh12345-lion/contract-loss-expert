@@ -2,6 +2,171 @@ import type { GuidePage } from "./types";
 
 const guides: GuidePage[] = [
   {
+    slug: "business-limited-trading-history-lost-profits",
+    title: "Lost Profits With Limited Trading History",
+    h1: "Assessing Lost Profits When a Business Has Limited Trading History",
+    metaTitle:
+      "Assessing Lost Profits With Limited Trading History | Guide",
+    metaDescription:
+      "How lost profits may be assessed where a business has limited trading history: contracts, early trading data, forecasts, costs, capacity, comparables and uncertainty.",
+    aboutServiceId: "lost-profits",
+    datePublished: "2026-10-08",
+    dateModified: "2026-10-08",
+    image: "/images/guides/business-limited-trading-history-lost-profits.jpg",
+    imageAlt:
+      "Person working at a laptop while reviewing printed charts and financial summaries on a desk",
+    paragraphs: [
+      "A business with a limited trading history can present particular challenges when a contractual loss claim includes lost profits.",
+      "Historical financial records may provide useful evidence about past performance, but a newly established business may have relatively little information showing how revenue, costs and profitability might have developed without the event giving rise to the claim.",
+      "This does not necessarily prevent a lost profits assessment. It may, however, mean that greater attention needs to be given to other available evidence, the assumptions used and the level of uncertainty involved.",
+      "A contract loss expert may be instructed to analyse financial evidence and assess the quantum of a claim within the scope of the instructions. The appropriate approach will depend on the facts and circumstances of the particular dispute.",
+    ],
+    sections: [
+      {
+        heading: "Why Limited Trading History Can Matter",
+        content:
+          "A lost profits assessment may involve consideration of what financial performance might have occurred if the alleged breach or other relevant event had not happened.\n\nFor an established business, historical trading data may provide information about revenue, costs, margins, customer demand and seasonal patterns.\n\nA newer business may have fewer historical records from which to assess those factors.\n\nFor example, a business may have: only a short period of trading before the relevant event; limited customer sales data; few completed contracts; no established profit history; forecasts covering periods beyond its trading experience; significant changes in operations during its early development.\n\nThe absence of a long trading history does not necessarily determine the outcome of a claim. It may instead affect the evidence available for assessing the counterfactual financial position.",
+      },
+      {
+        heading: "What Evidence Might Be Relevant?",
+        content:
+          "Where historical trading information is limited, other evidence may become relevant to understanding the business and the financial opportunity said to have been lost.\n\nDepending on the circumstances, this may include: the contract giving rise to the dispute; customer agreements and purchase orders; sales records; pricing information; business plans; budgets and forecasts; funding proposals; management accounts; supplier agreements; production or capacity information; customer enquiries and commitments; evidence concerning comparable transactions; industry and market information.\n\nNo particular category of evidence will necessarily establish the amount of a claimed loss. Its relevance will depend on the issues being considered and the assumptions underlying the calculation.\n\nFor an overview of the main categories of contractual loss, see the Types of Contract Loss guide.",
+      },
+      {
+        heading: "The Role of the Underlying Contract",
+        content:
+          "The contract itself may be particularly important where the claimed loss relates to an identifiable commercial opportunity.\n\nThe agreement may contain information about: contract duration; pricing; expected volumes; minimum commitments; delivery requirements; payment arrangements; renewal provisions; termination provisions.\n\nOther contractual documents may also provide evidence about the commercial relationship and the transactions that were expected to take place.\n\nThe existence of a contract does not, by itself, establish the amount of profit that would have been generated. Revenue and associated costs may still need to be considered.",
+      },
+      {
+        heading: "Using Early Trading Data",
+        content:
+          "Even a short trading period may contain useful financial information.\n\nFor example, early sales may provide evidence about actual customer demand, pricing, margins or operating costs.\n\nHowever, a short period of trading may not capture all relevant patterns. The business may have been expanding, changing its pricing, building its customer base or operating below expected capacity.\n\nAn expert may therefore need to consider what the available trading data does and does not demonstrate.\n\nThe significance of early financial results will depend on the circumstances rather than simply on the length of the trading period.",
+      },
+      {
+        heading: "Considering Budgets and Forecasts",
+        content:
+          "Business plans, budgets and financial forecasts may be relevant where a company has limited trading history.\n\nThese documents may contain assumptions about expected sales, pricing, costs, staffing, investment and growth.\n\nTheir evidential value may depend on factors such as: when the forecast was prepared; who prepared it; the information available at the time; the basis for the revenue assumptions; the basis for projected costs; whether actual performance was subsequently available; whether the assumptions changed over time.\n\nA forecast created before a dispute arose may provide contemporaneous evidence of what management expected at the time.\n\nThat does not necessarily mean the forecast represents what would have occurred. Forecasts are based on assumptions and may differ from subsequent actual performance.",
+      },
+      {
+        heading: "Evidence From Customers and Contracts",
+        content:
+          "Customer evidence can sometimes be relevant where a business had not yet developed a substantial trading history.\n\nDepending on the dispute, relevant material may include: signed customer contracts; purchase orders; letters of intent; renewal discussions; customer correspondence; pricing agreements; historical order patterns; evidence of expected volumes.\n\nThe strength and relevance of such evidence will depend on the particular circumstances.\n\nFor example, a completed contract with defined pricing and volumes may provide different information from an early-stage commercial discussion where no binding commitment had been made.",
+      },
+      {
+        heading: "Assessing Revenue Assumptions",
+        content:
+          "Revenue may be a significant component of a lost profits calculation.\n\nFor a business with limited trading history, assumptions about future sales may require careful examination.\n\nRelevant questions may include: What sales had actually been achieved? What orders had been received? What customers were expected to purchase? What prices were being charged or proposed? What capacity did the business have? Were sales dependent on particular customers? What evidence supported projected growth? Were there market conditions that could have affected demand?\n\nThese questions can help distinguish between figures supported by available evidence and projections that depend more heavily on assumptions.",
+      },
+      {
+        heading: "Considering Costs and Profit Margins",
+        content:
+          "Lost profits generally involve more than establishing potential revenue.\n\nThe analysis may also need to consider costs that would have been incurred in generating that revenue.\n\nDepending on the business, these could include: materials; manufacturing costs; distribution; staff costs; sales commissions; premises; technology; insurance; professional services; other operating expenditure.\n\nFor a newly established business, cost structures may also have been changing as operations developed.\n\nA margin observed during a short initial period may not necessarily remain unchanged as the business grows. The appropriate treatment will depend on the available evidence and the methodology used.\n\nThe Contract Loss Expert services page provides further information about lost profits quantification and related contract loss assessments.",
+      },
+      {
+        heading: "Considering Capacity and Operational Constraints",
+        content:
+          "Projected sales may also need to be considered against the business's actual or expected capacity.\n\nA forecast may assume significant growth, but the business may have needed additional employees, equipment, premises, financing or suppliers to support that growth.\n\nEvidence concerning operational capacity can therefore be relevant to the assessment.\n\nThis may include staffing plans, production records, supplier arrangements, equipment requirements and investment plans.\n\nThe purpose is not to assume that projected growth would or would not have occurred, but to consider whether the assumptions underlying the loss calculation are consistent with the available evidence.",
+      },
+      {
+        heading: "Comparable Businesses and Market Evidence",
+        content:
+          "Where direct historical evidence is limited, information about comparable businesses or market conditions may sometimes provide additional context.\n\nDepending on the dispute, an assessment may consider: comparable businesses; industry sales data; market growth information; relevant pricing trends; customer demand; industry margins; comparable transactions.\n\nSuch information should be treated with care.\n\nBusinesses that appear similar may differ in size, location, products, customers, pricing, cost structure and stage of development. A comparison may therefore provide context without necessarily establishing what the particular business would have achieved.",
+      },
+      {
+        heading: "Considering the Counterfactual",
+        content:
+          "A lost profits assessment may involve constructing a counterfactual scenario.\n\nThis means considering what might have happened if the relevant event or alleged breach had not occurred.\n\nFor a business with limited trading history, the counterfactual may involve greater uncertainty because there may be fewer historical results against which the scenario can be tested.\n\nAn analysis may therefore need to consider several relevant factors, such as: the contractual opportunity available to the business; actual performance before the relevant event; orders or customer commitments; available capacity; expected costs; market conditions; forecasts prepared at the relevant time; other factors that could have affected performance.\n\nThe resulting assessment should make material assumptions clear so that they can be examined against the available evidence.",
+      },
+      {
+        heading: "Dealing With Uncertainty",
+        content:
+          "Uncertainty is not necessarily limited to businesses with short trading histories. However, it can be more pronounced where there is little historical data.\n\nFor example, a business may have been preparing to enter a new market when a contractual dispute arose. There may be limited evidence showing how quickly customers would have been acquired or what level of profitability might have resulted.\n\nIn such circumstances, the assumptions and limitations of the analysis may require particular attention.\n\nAn expert may be able to identify areas where the available evidence is stronger and areas where the calculation depends more heavily on assumptions.",
+      },
+      {
+        heading: "Why Contemporaneous Documents Can Be Relevant",
+        content:
+          "Documents created before or around the relevant event may help establish what the business and its management expected at the time.\n\nThese could include: business plans; board papers; budgets; internal forecasts; sales pipelines; customer correspondence; investment documents; supplier agreements; pricing documents; management reports.\n\nSuch documents do not necessarily prove that projected results would have occurred.\n\nTheir relevance will depend on the circumstances, the purpose for which they were prepared and the information available when they were created.",
+      },
+      {
+        heading: "Considering Actual Performance After the Relevant Event",
+        content:
+          "Actual financial performance after the relevant event may sometimes provide additional information for an assessment.\n\nHowever, later performance does not automatically establish what would have happened in the counterfactual scenario.\n\nFor example, actual sales may have been affected by market changes, new competitors, changes in customer demand or other events unrelated to the contractual dispute.\n\nThe relevance of subsequent performance therefore depends on the circumstances and the questions being addressed.",
+      },
+      {
+        heading: "What Financial Records Might Be Useful?",
+        content:
+          "Where a business has limited trading history, it can be useful to identify available financial records rather than relying only on statutory accounts.\n\nPotentially relevant documents may include: management accounts; general ledger records; bank statements; sales invoices; purchase invoices; payroll records; customer orders; supplier records; budgets; forecasts; business plans; tax records; pricing information.\n\nThe appropriate records will depend on the nature of the claim and the period being assessed.",
+      },
+      {
+        heading: "The Role of a Contract Loss Expert",
+        content:
+          "A contract loss expert may be instructed to analyse financial evidence relevant to the quantum of a dispute.\n\nDepending on the scope of the instructions, this may involve reviewing historical financial information, assessing forecasts, examining revenue and cost assumptions, considering alternative scenarios and identifying areas of uncertainty.\n\nThe expert's role is distinct from determining legal liability or deciding whether a particular loss is legally recoverable. Those matters may fall within the remit of the court, tribunal or other appropriate decision-maker.\n\nInformation about relevant expert qualifications is available on the Contract Loss Expert qualifications page.",
+      },
+      {
+        heading: "Preparing Evidence for Review",
+        content:
+          "Where a business has limited trading history, organising the available evidence can help identify the information available for the assessment.\n\nLegal teams may wish to consider whether the document set includes: the relevant contract and amendments; customer and supplier agreements; historical financial records; budgets and forecasts; sales and order information; pricing records; cost information; business plans; evidence of available capacity; relevant contemporaneous correspondence.\n\nThe precise evidence required will depend on the issues in dispute and the questions the expert has been instructed to address.\n\nFurther information about the types of disputes in which contract loss expertise may be relevant is available on the case types page.",
+      },
+      {
+        heading: "Final Considerations",
+        content:
+          "A limited trading history can make a lost profits assessment more dependent on evidence outside a traditional long-term profit history.\n\nContracts, customer records, early trading data, budgets, forecasts, cost information and contemporaneous business documents may all provide relevant evidence, depending on the circumstances.\n\nAt the same time, projections for a relatively new business may involve greater uncertainty than calculations supported by a substantial history of comparable trading performance. That uncertainty does not necessarily prevent an assessment, but the assumptions and limitations may need to be clearly identified.\n\nA careful review of the available evidence can help distinguish established financial information from projections and assumptions. The appropriate approach will depend on the facts of the dispute, the available records and the specific questions the contract loss expert has been asked to address.\n\nDisclaimer: This article provides general information about assessing lost profits where a business has limited trading history. It is not legal, accounting or expert advice and does not determine whether any particular loss is recoverable. The appropriate evidence and methodology will depend on the facts, contractual terms, applicable law and issues in the individual dispute.",
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "Can lost profits be assessed for a business with limited trading history?",
+        answer:
+          "A limited trading history does not necessarily prevent a lost profits assessment. It may mean that greater attention needs to be given to other available evidence, the assumptions used and the level of uncertainty involved.",
+      },
+      {
+        question:
+          "What evidence may be relevant where there is little historical trading data?",
+        answer:
+          "Depending on the circumstances, relevant evidence may include the underlying contract, customer agreements and purchase orders, early sales records, pricing information, business plans, budgets and forecasts, management accounts, capacity information and market information. No particular category will necessarily establish the amount of a claimed loss.",
+      },
+      {
+        question:
+          "Are budgets and forecasts enough to establish lost profits?",
+        answer:
+          "A forecast prepared before a dispute arose may provide contemporaneous evidence of what management expected at the time, but it does not necessarily represent what would have occurred. Its evidential value may depend on when and by whom it was prepared and the basis for its revenue and cost assumptions.",
+      },
+      {
+        question:
+          "Does a contract loss expert decide whether lost profits are recoverable?",
+        answer:
+          "No. A contract loss expert may analyse financial evidence relevant to the quantum of a dispute within the scope of the instructions. Legal liability and whether a particular loss is legally recoverable may fall within the remit of the court, tribunal or other appropriate decision-maker.",
+      },
+    ],
+    relatedLinks: [
+      {
+        href: "/loss-types",
+        label: "Types of Contract Loss",
+      },
+      {
+        href: "/services",
+        label: "Contract Loss Services",
+      },
+      {
+        href: "/guides/lost-profits-but-for-methodology",
+        label: "Lost Profits But-For Methodology",
+      },
+      {
+        href: "/guides/what-financial-evidence-needed-to-support-claim",
+        label: "Financial Evidence for Contract Loss Claims",
+      },
+      {
+        href: "/qualifications",
+        label: "Expert Qualifications",
+      },
+      {
+        href: "/case-types",
+        label: "Case Types",
+      },
+    ],
+  },
+  {
     slug: "what-financial-evidence-needed-to-support-claim",
     title: "Financial Evidence for Contract Loss Claims",
     h1: "What Financial Evidence Is Needed to Support a Contract Loss Claim?",
