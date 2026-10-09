@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { photos, serviceImage } from "@/lib/images";
 import { createMetadata } from "@/lib/metadata";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
@@ -46,6 +48,7 @@ export default function ServicesPage() {
         ]}
       />
       <PageHero
+        image="analysisDesk"
         title="Contract Loss Expert Witness Services"
         subtitle="From lost profits quantification and wasted expenditure analysis to construction quantum claims and professional negligence damages, our experts produce court-ready expert reports for every type of contract loss dispute."
         breadcrumbs={[
@@ -55,10 +58,27 @@ export default function ServicesPage() {
       />
       {services.map((service, idx) => (
         <Section key={service.id} alt={idx % 2 === 1} id={service.id}>
-          <h2 className="text-2xl font-bold text-heading">{service.name}</h2>
-          <p className="mt-4 max-w-3xl text-body leading-relaxed">
-            {service.content}
-          </p>
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] lg:items-start">
+            <div>
+              <h2 className="font-display text-2xl font-semibold text-heading sm:text-3xl">
+                {service.name}
+              </h2>
+              <p className="mt-4 max-w-3xl text-body leading-relaxed">
+                {service.content}
+              </p>
+            </div>
+            {serviceImage[service.id] ? (
+              <div className="dog-ear relative aspect-[3/2] bg-section-alt">
+                <Image
+                  src={photos[serviceImage[service.id]].src}
+                  alt={photos[serviceImage[service.id]].alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 420px"
+                  className="object-cover"
+                />
+              </div>
+            ) : null}
+          </div>
           {service.methodology && (
             <ResponsiveTable className="mt-8">
               <table className="w-full min-w-[600px] border-collapse text-sm">

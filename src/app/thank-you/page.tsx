@@ -26,6 +26,7 @@ export default function ThankYouPage() {
         ])}
       />
       <PageHero
+        image="handshakeSuits"
         title="Thank You"
         subtitle="Your enquiry has been received. We will respond within 1 business day with suitable contract loss expert witness options for your case."
         breadcrumbs={[{ label: "Thank You" }]}
@@ -38,7 +39,7 @@ export default function ThankYouPage() {
           </p>
           <Link
             href="/"
-            className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded bg-accent px-8 py-3 font-semibold text-white hover:bg-[#a34a32]"
+            className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded bg-accent px-8 py-3 font-semibold text-white hover:bg-[#a2452f]"
           >
             Return to Homepage
           </Link>

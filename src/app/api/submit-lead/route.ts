@@ -7,7 +7,7 @@ import {
 import { appendLeadToSheet, parseLeadBody } from "@/lib/lead-submission";
 
 /**
- * POST /api/submit-lead — webhook primary.
+ * POST /api/submit-lead: webhook primary.
  * Optional Google Sheets: one shared tab + Form Type; soft-fail only.
  */
 export async function POST(request: Request) {
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     );
   }
 
-  // Webhook primary — hard-fail only when configured and delivery fails.
+  // Webhook primary: hard-fail only when configured and delivery fails.
   if (webhookUrl) {
     const webhookOk = await notifyLeadWebhook(
       {
@@ -55,7 +55,7 @@ export async function POST(request: Request) {
     }
   }
 
-  // Soft-fail Sheets — never block a successful webhook.
+  // Soft-fail Sheets: never block a successful webhook.
   if (sheetsConfigured) {
     try {
       await appendLeadToSheet(lead);

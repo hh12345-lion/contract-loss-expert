@@ -26,6 +26,7 @@ export default function WhatIsPage() {
         ])}
       />
       <PageHero
+        image="analysisDesk"
         title="What Is a Contract Loss Expert Witness?"
         breadcrumbs={[
           { label: "Home", href: "/" },

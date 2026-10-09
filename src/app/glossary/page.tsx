@@ -27,6 +27,7 @@ export default function GlossaryPage() {
         ]}
       />
       <PageHero
+        image="gavelScales"
         title="Contract Loss Expert Witness Glossary"
         subtitle="Key legal and financial terms used in contract loss litigation and expert witness reports, from but-for analysis to Scott Schedules."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Glossary" }]}

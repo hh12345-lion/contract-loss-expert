@@ -24,6 +24,7 @@ export default function GuidesPage() {
         ])}
       />
       <PageHero
+        image="spreadsheetGlasses"
         title="Legal Guides: Contract Loss Expert Witnesses"
         subtitle="Practical guides on financial evidence for contract loss claims, instructing quantum experts, lost profits methodology, remoteness of damage, construction claims, and professional negligence loss quantification."
         breadcrumbs={[

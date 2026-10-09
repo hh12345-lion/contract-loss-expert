@@ -3,7 +3,7 @@ import { BRAND_NAME } from "@/lib/leadNotification";
 
 export { BRAND_NAME };
 
-/** Row 1 headers — one shared GOOGLE_SHEET_TAB_NAME; Form Type distinguishes rows. */
+/** Row 1 headers: one shared GOOGLE_SHEET_TAB_NAME; Form Type distinguishes rows. */
 export const LEAD_SHEET_HEADERS = [
   "Timestamp",
   "Brand",
@@ -92,7 +92,7 @@ export function buildLeadSheetRow(lead: LeadSubmission): CellValue[] {
 }
 
 /**
- * Appends a lead row. Throws on API errors — callers soft-fail so webhook stays primary.
+ * Appends a lead row. Throws on API errors: callers soft-fail so webhook stays primary.
  */
 export async function appendLeadToSheet(lead: LeadSubmission): Promise<void> {
   await appendRow(buildLeadSheetRow(lead));

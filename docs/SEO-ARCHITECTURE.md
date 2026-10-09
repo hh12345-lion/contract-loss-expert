@@ -1,4 +1,4 @@
-# SEO Architecture — contractlossexpert.com
+# SEO Architecture: contractlossexpert.com
 
 **Site:** https://www.contractlossexpert.com  
 **Audience:** UK solicitors, barristers, and law firms instructing contract loss expert witnesses  
@@ -28,7 +28,7 @@ This document is the canonical SEO blueprint for ContractLossExpert.com. It gove
 
 ## 1. Keyword strategy
 
-### Tier 1 — Transactional
+### Tier 1: Transactional
 
 | Keyword |
 |---------|
@@ -43,7 +43,7 @@ This document is the canonical SEO blueprint for ContractLossExpert.com. It gove
 | consequential loss expert witness |
 | construction quantum expert witness UK |
 
-### Tier 2 — Informational
+### Tier 2: Informational
 
 | Keyword |
 |---------|
@@ -58,7 +58,7 @@ This document is the canonical SEO blueprint for ContractLossExpert.com. It gove
 | duty to mitigate breach of contract |
 | SAAMCo principle professional negligence |
 
-### Tier 3 — Long-tail / sector
+### Tier 3: Long-tail / sector
 
 | Keyword |
 |---------|
@@ -295,7 +295,7 @@ flowchart TB
 | `wasted-expenditure-reliance-loss` | `wasted-expenditure` |
 | `construction-quantum-expert-guide` | `construction-quantum` |
 | `professional-negligence-loss-quantification` | `professional-negligence-damages` |
-| `instructing-quantum-expert-letter` | *(none — procedural guide)* |
+| `instructing-quantum-expert-letter` | *(none: procedural guide)* |
 
 #### Glossary (30 terms, definition-first)
 
@@ -351,7 +351,7 @@ flowchart TB
 
 ## 3. Internal linking rules
 
-### Rule 1 — `/loss-types` links to:
+### Rule 1: `/loss-types` links to:
 
 - All relevant `/glossary` terms (inline + related terms block)
 - `/case-types/commercial-contract-breach`
@@ -361,7 +361,7 @@ flowchart TB
 - `/services` (and section anchors where cited)
 - `/contact`
 
-### Rule 2 — Every `/case-types/[slug]` links to:
+### Rule 2: Every `/case-types/[slug]` links to:
 
 - Relevant `/services` section (hash anchor)
 - Relevant `/sectors/[slug]` where applicable
@@ -371,7 +371,7 @@ flowchart TB
 - `/how-to-instruct`
 - `/contact`
 
-### Rule 3 — Every `/sectors/[slug]` links to:
+### Rule 3: Every `/sectors/[slug]` links to:
 
 - Relevant `/case-types/[slug]`
 - Relevant `/services` section
@@ -379,7 +379,7 @@ flowchart TB
 - `/qualifications`
 - `/contact`
 
-### Rule 4 — Every `/guides/[slug]` links to:
+### Rule 4: Every `/guides/[slug]` links to:
 
 - `/guides` (hub)
 - Relevant `/case-types`
@@ -389,14 +389,14 @@ flowchart TB
 - `/qualifications`
 - `/contact`
 
-### Rule 5 — `/glossary` terms link to:
+### Rule 5: `/glossary` terms link to:
 
 - Most relevant `/case-types/[slug]`
 - Most relevant `/guides/[slug]`
 - `/loss-types` for loss-type terms
 - `/sectors/[slug]` for sector-specific terms
 
-### Rule 6 — Homepage links to:
+### Rule 6: Homepage links to:
 
 - All 8 `/services` sections (via cards → `#anchor`)
 - `/loss-types`
@@ -471,7 +471,7 @@ flowchart TD
 | ProfessionalService | Homepage | `professionalServiceSchema` | `JsonLd` |
 | WebSite + SearchAction | Homepage | `websiteSchema` (glossary search URL) | `JsonLd` |
 | Service (×8) | `/services` | `serviceNode(id, name, desc)` | `JsonLd` |
-| Article (pillar) | `/loss-types` | `articleSchema` — `about` → `#lost-profits` | `JsonLd` |
+| Article (pillar) | `/loss-types` | `articleSchema`: `about` → `#lost-profits` | `JsonLd` |
 | Article (×6) | `/guides/[slug]` | `articleSchema` + `aboutServiceId` | `JsonLd` |
 | Person (×3) | `/experts` | `personSchema` | `JsonLd` |
 | FAQPage | `/faq` (12 Q&As) | `faqPageSchema` | `JsonLd` |
@@ -530,15 +530,15 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 | # | Asset | Page | Location / format |
 |---|-------|------|-------------------|
-| 1 | Types of contract loss comparison table | `/loss-types` | H2: The Three Main Types of Recoverable Loss — columns: Type, Legal Basis, Aim, When Used |
-| 2 | Hadley v Baxendale two-limb table | `/loss-types` | H2: Consequential Loss — columns: Loss Type, Example, Limb |
-| 3 | Consequential loss recoverable vs not table | `/loss-types` | Same section — direct vs Limb 2 vs not recoverable |
+| 1 | Types of contract loss comparison table | `/loss-types` | H2: The Three Main Types of Recoverable Loss: columns: Type, Legal Basis, Aim, When Used |
+| 2 | Hadley v Baxendale two-limb table | `/loss-types` | H2: Consequential Loss: columns: Loss Type, Example, Limb |
+| 3 | Consequential loss recoverable vs not table | `/loss-types` | Same section: direct vs Limb 2 vs not recoverable |
 | 4 | But-for methodology steps | `/guides/lost-profits-but-for-methodology` | Numbered steps: baseline → counterfactual → actual vs but-for → net loss |
 | 5 | Expectation vs reliance comparison | `/loss-types` | Summary table in Three Main Types section |
-| 6 | Construction quantum methodology table | `/services` | H2: Construction Quantum Claims — columns: Phase, What We Do, Deliverable |
-| 7 | Key statistics table | `/` (homepage) | H2: Key UK Statistics — columns: Metric, Figure, Source |
+| 6 | Construction quantum methodology table | `/services` | H2: Construction Quantum Claims: columns: Phase, What We Do, Deliverable |
+| 7 | Key statistics table | `/` (homepage) | H2: Key UK Statistics: columns: Metric, Figure, Source |
 | 8 | Glossary (30 terms) | `/glossary` | Definition-first; one H2 or term block per entry; client-side search |
-| 9 | SJE vs PAE comparison | `/how-to-instruct` | Step 4 — table or two-column comparison |
+| 9 | SJE vs PAE comparison | `/how-to-instruct` | Step 4: table or two-column comparison |
 | 10 | Instruction process timeline | `/how-to-instruct` | 7-step matching timeline (Identify loss → Letter of instruction) |
 
 ### Homepage statistics table (asset 7)
@@ -546,11 +546,11 @@ AI systems and answer engines should cite structured, definition-first content. 
 | Metric | Figure | Source |
 |--------|--------|--------|
 | Typical expert hourly rate | £250–£600/hr | Industry average |
-| Governing rule — remoteness | Hadley v Baxendale [1854] | Contract law |
+| Governing rule: remoteness | Hadley v Baxendale [1854] | Contract law |
 | Primary damage measure | Expectation loss (but-for) | Robinson v Harman [1848] |
 | Alternative measure | Reliance loss / wasted expenditure | Anglia TV v Reed [1972] |
 | Court framework | CPR Part 35 | Civil Procedure Rules |
-| Duty to mitigate | Yes — claimant must minimise loss | UK contract law |
+| Duty to mitigate | Yes: claimant must minimise loss | UK contract law |
 | Arbitration frameworks | LCIA, ICC, UNCITRAL | As applicable |
 
 ### Lost profits methodology table (asset 6 pattern on `/services`)
@@ -565,12 +565,12 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 ### GEO content format rules
 
-1. **Definition first** — lead each H2 with a one-sentence legal definition before analysis.
-2. **Tables before narrative** — place comparison tables immediately under the H2.
-3. **UK citations** — include case names and years (e.g. *Hadley v Baxendale* [1854] 9 Ex Ch 341).
-4. **Solicitor-facing tone** — practical instruction focus, not consumer FAQ.
-5. **Stable URLs** — pillar and guides are primary citation targets; use canonical URLs from `createMetadata`.
-6. **Anchor IDs** — glossary and loss-types sections use predictable `#slug` anchors for deep links.
+1. **Definition first**: lead each H2 with a one-sentence legal definition before analysis.
+2. **Tables before narrative**: place comparison tables immediately under the H2.
+3. **UK citations**: include case names and years (e.g. *Hadley v Baxendale* [1854] 9 Ex Ch 341).
+4. **Solicitor-facing tone**: practical instruction focus, not consumer FAQ.
+5. **Stable URLs**: pillar and guides are primary citation targets; use canonical URLs from `createMetadata`.
+6. **Anchor IDs**: glossary and loss-types sections use predictable `#slug` anchors for deep links.
 
 ---
 
@@ -580,7 +580,7 @@ AI systems and answer engines should cite structured, definition-first content. 
 
 | Directory | URL | Action |
 |-----------|-----|--------|
-| UK Register of Expert Witnesses | jspubs.com | Submit firm listing — loss/quantum category |
+| UK Register of Expert Witnesses | jspubs.com | Submit firm listing: loss/quantum category |
 | Academy of Experts | academyofexperts.org | Membership / directory profile |
 | Expert Witness Institute (EWI) | ewi.org.uk | Membership listing |
 | TCC expert listings | (via professional bodies / court lists) | Monitor for construction quantum experts |
@@ -643,7 +643,7 @@ AI systems and answer engines should cite structured, definition-first content. 
 ### Competitor diff log template
 
 ```markdown
-## YYYY-MM — Competitor review
+## YYYY-MM: Competitor review
 
 | Competitor | New URLs | Notable content | Backlink / PR | Case law updates |
 |------------|----------|-----------------|---------------|------------------|
@@ -674,10 +674,10 @@ Both files are **generated by a Node script** (not hand-edited) so the URL list 
 
 Source: `src/lib/seo/publicUrlInventory.ts`
 
-- **Static routes** — `APP_STATIC_PATHS` (13 indexable marketing pages)
-- **Dynamic routes** — slugs from `src/data/case-types.ts`, `sectors.ts`, `guides.ts`
-- **Excluded from sitemap** — `/contact`, `/thank-you`, `/privacy`, `/terms`
-- Canonical host — `https://www.contractlossexpert.com` (or `NEXT_PUBLIC_SITE_URL`)
+- **Static routes**: `APP_STATIC_PATHS` (13 indexable marketing pages)
+- **Dynamic routes**: slugs from `src/data/case-types.ts`, `sectors.ts`, `guides.ts`
+- **Excluded from sitemap**: `/contact`, `/thank-you`, `/privacy`, `/terms`
+- Canonical host: `https://www.contractlossexpert.com` (or `NEXT_PUBLIC_SITE_URL`)
 
 ### Commands
 
@@ -690,7 +690,7 @@ npm run seo:verify     # Fail if sitemap <loc> entries drift from inventory
 
 **After adding a new static route:** add its path to `APP_STATIC_PATHS`, then run `seo:generate`.
 
-Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used** — static files in `public/` are served at `/sitemap.xml` and `/robots.txt`.
+Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used**: static files in `public/` are served at `/sitemap.xml` and `/robots.txt`.
 
 ---
 
@@ -698,9 +698,9 @@ Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used** — static
 
 ### Infrastructure
 
-- [ ] **Vercel deployment** — production branch connected; preview URLs noindex
-- [ ] **DNS** — `contractlossexpert.com` → 301 to `www.contractlossexpert.com` (implemented in `middleware.ts`)
-- [ ] **SSL** — HTTPS on www subdomain
+- [ ] **Vercel deployment**: production branch connected; preview URLs noindex
+- [ ] **DNS**: `contractlossexpert.com` → 301 to `www.contractlossexpert.com` (implemented in `middleware.ts`)
+- [ ] **SSL**: HTTPS on www subdomain
 
 ### Environment variables (`.env.example`)
 
@@ -718,7 +718,7 @@ Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used** — static
 
 - [x] `html lang="en-GB"` in `src/app/layout.tsx`
 - [x] `hreflang`: `en-GB` and `x-default` via `buildHreflangAlternates` in `createMetadata` (every page)
-- [ ] `hreflang` `en-US` — defer until US-localized content exists
+- [ ] `hreflang` `en-US`: defer until US-localized content exists
 - [x] `openGraph.locale`: `en_GB` in `createMetadata`
 
 ### Analytics and verification
@@ -729,9 +729,9 @@ Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used** — static
 
 ### Technical SEO files
 
-- [x] `public/sitemap.xml` — generated via `npm run seo:generate` (Appendix B priorities)
-- [x] `public/robots.txt` — generated; disallows `/thank-you`, `/api/`
-- [x] `npm run seo:verify` — inventory drift check
+- [x] `public/sitemap.xml`: generated via `npm run seo:generate` (Appendix B priorities)
+- [x] `public/robots.txt`: generated; disallows `/thank-you`, `/api/`
+- [x] `npm run seo:verify`: inventory drift check
 - [x] Wire `JsonLd` on all page templates (Section 4)
 - [x] `createMetadata` per route
 - [x] Internal linking via `seo-internal-links.ts` + `RelatedLinks`
@@ -739,13 +739,13 @@ Next.js `src/app/sitemap.ts` and `src/app/robots.ts` are **not used** — static
 
 ### Social and directories
 
-- [ ] **LinkedIn:** ContractLossExpert company page — URL in `LINKEDIN_URL` (`src/lib/site.ts`)
+- [ ] **LinkedIn:** ContractLossExpert company page: URL in `LINKEDIN_URL` (`src/lib/site.ts`)
 - [ ] Submit to **jspubs**, **Academy of Experts**, **EWI** (Section 6)
 
 ### Post-launch
 
-- [ ] Google Search Console — submit sitemap
-- [ ] Bing Webmaster Tools — submit sitemap
+- [ ] Google Search Console: submit sitemap
+- [ ] Bing Webmaster Tools: submit sitemap
 - [ ] Validate structured data (Rich Results Test) on homepage, `/loss-types`, one case-type, one guide
 - [ ] Confirm apex redirect and canonical tags on sample URLs
 
@@ -846,7 +846,7 @@ Use `createMetadata({ title, description, path })` from `src/lib/metadata.ts` on
 | `/glossary` | Contract Loss Expert Witness Glossary \| Key UK Legal & Finance Terms | 30 definitions |
 | `/contact` | Instruct a Contract Loss Expert Witness \| ContractLossExpert.com UK | Lead form; match within 1 business day |
 
-**Dynamic pages:** append context to title — e.g. `{H1} | ContractLossExpert UK` — keep under ~60 characters where possible.
+**Dynamic pages:** append context to title: e.g. `{H1} | ContractLossExpert UK`: keep under ~60 characters where possible.
 
 ---
 
@@ -876,8 +876,8 @@ Snapshot as of May 2026 (post SEO upgrade pass).
 | SJE vs PAE comparison table | Done | `/how-to-instruct` |
 | Homepage hub links (Rule 6) | Done | `src/app/page.tsx` |
 | `en-US` hreflang | Deferred | Add only if US-localized pages are published |
-| Off-page directory submissions | Manual | Section 6 — marketing task |
-| Competitor monitoring log | Manual | Section 7 — monthly cadence |
+| Off-page directory submissions | Manual | Section 6: marketing task |
+| Competitor monitoring log | Manual | Section 7: monthly cadence |
 
 **Next recommended actions (non-code):**
 

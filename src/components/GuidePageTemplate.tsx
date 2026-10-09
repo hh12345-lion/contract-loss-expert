@@ -43,6 +43,7 @@ export function GuidePageTemplate({
     <>
       <JsonLd data={schemas} />
       <PageHero
+        image="chartsPaper"
         title={guide.h1}
         subtitle={guide.paragraphs[0]}
         breadcrumbs={breadcrumbs}
@@ -50,7 +51,7 @@ export function GuidePageTemplate({
       <Section>
         <article className="prose-content mx-auto max-w-3xl">
           {guide.image ? (
-            <div className="relative mb-8 aspect-[16/9] w-full overflow-hidden rounded-lg bg-[#F5F0E8]">
+            <div className="relative mb-8 aspect-[16/9] w-full overflow-hidden rounded-lg bg-[#F3EEE5]">
               <Image
                 src={guide.image}
                 alt={guide.imageAlt ?? guide.h1}

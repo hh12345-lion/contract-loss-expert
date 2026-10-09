@@ -3,6 +3,7 @@ import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
 import { Card } from "@/components/Card";
+import { caseTypeImage } from "@/lib/images";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import { caseTypes } from "@/data/case-types";
@@ -24,6 +25,7 @@ export default function CaseTypesPage() {
         ])}
       />
       <PageHero
+        image="gavelBooks"
         title="Case Types Requiring a Contract Loss Expert Witness"
         subtitle="Litigation spanning commercial contract breach, construction quantum, professional negligence, IP licensing, and supply chain failure each requires specialist loss quantification. Select your case type for sector-specific guidance and expert witness FAQs."
         breadcrumbs={[
@@ -39,6 +41,7 @@ export default function CaseTypesPage() {
               title={ct.title}
               description={ct.paragraphs[0].slice(0, 160) + "…"}
               href={`/case-types/${ct.slug}`}
+              photo={caseTypeImage[ct.slug]}
             />
           ))}
         </div>

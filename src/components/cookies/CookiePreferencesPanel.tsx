@@ -167,7 +167,7 @@ export function CookiePreferencesPanel({ onClose }: CookiePreferencesPanelProps)
           <button
             type="button"
             onClick={handleSave}
-            className="min-h-[44px] rounded bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#a34a32]"
+            className="min-h-[44px] rounded bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#a2452f]"
           >
             Save Preferences
           </button>

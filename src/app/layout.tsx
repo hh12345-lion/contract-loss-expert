@@ -19,6 +19,9 @@ const plex = IBM_Plex_Sans({
   display: "swap",
 });
 
+/** Every route is rendered on the server per request. */
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = createMetadata({
   title:
     "Contract Loss Expert Witness | Lost Profits & Breach of Contract Damages",

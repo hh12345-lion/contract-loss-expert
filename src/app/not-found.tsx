@@ -15,6 +15,7 @@ export default function NotFound() {
   return (
     <>
       <PageHero
+        image="chartsPaper"
         title="Page Not Found"
         subtitle="The page you are looking for does not exist or has been moved."
         breadcrumbs={[{ label: "404" }]}
@@ -43,7 +44,7 @@ export default function NotFound() {
           </nav>
           <Link
             href="/"
-            className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded bg-accent px-8 py-3 font-semibold text-white hover:bg-[#a34a32]"
+            className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded bg-accent px-8 py-3 font-semibold text-white hover:bg-[#a2452f]"
           >
             Return to Homepage
           </Link>

@@ -78,6 +78,7 @@ export default function HowToInstructPage() {
         ])}
       />
       <PageHero
+        image="clipboardContract"
         title="How to Instruct a Contract Loss Expert Witness"
         breadcrumbs={[
           { label: "Home", href: "/" },

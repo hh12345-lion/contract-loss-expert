@@ -6,11 +6,11 @@ export interface LeadWebhookInput {
   fullName: string;
   email: string;
   phone: string;
-  /** Free-text enquiry body — always sent to n8n as `message`. */
+  /** Free-text enquiry body: always sent to n8n as `message`. */
   message?: string;
 }
 
-/** Outbound n8n payload — shared keys across brand sites (+ message). */
+/** Outbound n8n payload: shared keys across brand sites (+ message). */
 export function buildWebhookPayload(lead: LeadWebhookInput) {
   return {
     "Full Name": lead.fullName,

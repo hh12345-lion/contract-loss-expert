@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SiteEmailLink } from "@/components/SiteEmailLink";
 import { CookieSettingsButton } from "@/components/cookies/CookieSettingsButton";
@@ -26,10 +27,15 @@ export function Footer() {
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
           <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
             <div>
-              <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-highlight">
-                ContractLossExpert
-              </p>
-              <h2 className="font-display mt-3 text-2xl font-semibold leading-snug sm:text-3xl">
+              <Image
+                src="/brand/logo-light.svg"
+                alt="Contract Loss Expert"
+                width={973}
+                height={219}
+                unoptimized
+                className="h-12! w-auto"
+              />
+              <h2 className="font-display mt-8 text-2xl font-semibold leading-snug sm:text-3xl">
                 Independent contract loss expert witnesses for legal teams worldwide.
               </h2>
               <p className="mt-5 max-w-lg text-sm leading-relaxed text-white/70">
@@ -101,7 +107,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 bg-[#142418]">
+      <div className="border-t border-white/10 bg-[#111D12]">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 text-xs text-white/50 sm:px-6">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <Link href="/privacy" className="hover:text-highlight">
@@ -112,6 +118,9 @@ export function Footer() {
             </Link>
             <Link href="/terms" className="hover:text-highlight">
               Terms
+            </Link>
+            <Link href="/image-credits" className="hover:text-highlight">
+              Image Credits
             </Link>
             <CookieSettingsButton />
           </div>

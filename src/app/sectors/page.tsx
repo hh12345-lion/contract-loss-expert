@@ -3,6 +3,7 @@ import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
 import { Card } from "@/components/Card";
+import { sectorImage } from "@/lib/images";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 import { sectors } from "@/data/sectors";
@@ -24,6 +25,7 @@ export default function SectorsPage() {
         ])}
       />
       <PageHero
+        image="boardroom"
         title="Contract Loss Expert Witnesses by Sector"
         subtitle="Sector economics are central to contract loss quantification. We match legal teams with experts who understand industry-specific trading patterns, margin structures, and comparable benchmarks."
         breadcrumbs={[
@@ -39,6 +41,7 @@ export default function SectorsPage() {
               title={s.title}
               description={s.paragraphs[0].slice(0, 160) + "…"}
               href={`/sectors/${s.slug}`}
+              photo={sectorImage[s.slug]}
             />
           ))}
         </div>

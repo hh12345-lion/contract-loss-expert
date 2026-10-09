@@ -7,12 +7,14 @@ import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import type { RelatedLink } from "@/lib/seo-internal-links";
 import type { ContentPage } from "@/data/types";
 import type { BreadcrumbItem } from "@/components/PageHero";
+import type { PhotoKey } from "@/lib/images";
 
 interface ContentPageTemplateProps {
   page: ContentPage;
   breadcrumbs: BreadcrumbItem[];
   hubPath: string;
   relatedLinks?: RelatedLink[];
+  image?: PhotoKey;
 }
 
 export function ContentPageTemplate({
@@ -20,6 +22,7 @@ export function ContentPageTemplate({
   breadcrumbs,
   hubPath,
   relatedLinks,
+  image,
 }: ContentPageTemplateProps) {
   const links = relatedLinks ?? page.relatedLinks ?? [];
   const schemas = [
@@ -35,7 +38,7 @@ export function ContentPageTemplate({
   return (
     <>
       <JsonLd data={schemas} />
-      <PageHero title={page.h1} breadcrumbs={breadcrumbs} />
+      <PageHero title={page.h1} breadcrumbs={breadcrumbs} image={image} />
       <Section>
         <div className="prose-content mx-auto max-w-3xl">
           {page.paragraphs.map((p, i) => (

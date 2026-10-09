@@ -55,7 +55,7 @@ export function CookieBanner() {
               </p>
             </div>
 
-            <div className="flex w-full flex-col gap-2 sm:flex-row sm:flex-wrap lg:max-w-xl lg:shrink-0 lg:justify-end xl:max-w-none">
+            <div className="flex w-full flex-col gap-2 sm:flex-row sm:flex-wrap lg:w-auto lg:max-w-xl lg:shrink-0 lg:justify-end xl:max-w-none">
               <button
                 type="button"
                 onClick={rejectNonEssential}
@@ -73,7 +73,7 @@ export function CookieBanner() {
               <button
                 type="button"
                 onClick={acceptAll}
-                className="min-h-[44px] w-full rounded bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-md transition-colors hover:bg-[#a34a32] sm:w-auto sm:px-5"
+                className="min-h-[44px] w-full rounded bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-md transition-colors hover:bg-[#a2452f] sm:w-auto sm:px-5"
               >
                 Accept All
               </button>

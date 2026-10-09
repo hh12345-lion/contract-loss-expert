@@ -90,6 +90,7 @@ export const organizationSchema = {
   name: SITE_NAME,
   url: SITE_URL,
   email: SITE_EMAIL,
+  logo: `${SITE_URL}/brand/icon-512.png`,
   areaServed: "United States",
   contactPoint: {
     "@type": "ContactPoint",

@@ -24,6 +24,7 @@ export default function QualificationsPage() {
         ])}
       />
       <PageHero
+        image="boardroom"
         title="Contract Loss Expert Witness Qualifications & Credentials"
         breadcrumbs={[
           { label: "Home", href: "/" },

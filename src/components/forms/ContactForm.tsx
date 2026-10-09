@@ -160,7 +160,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="flex min-h-[44px] w-full items-center justify-center rounded-sm bg-accent px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[#a34a32] disabled:opacity-60 sm:w-auto sm:text-sm"
+        className="flex min-h-[44px] w-full items-center justify-center rounded-sm bg-accent px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[#a2452f] disabled:opacity-60 sm:w-auto sm:text-sm"
       >
         {status === "loading" ? "Submitting…" : "Submit Enquiry"}
       </button>

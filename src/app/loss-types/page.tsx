@@ -39,6 +39,7 @@ export default function LossTypesPage() {
     <>
       <JsonLd data={schemas} />
       <PageHero
+        image="coinsChart"
         title="Types of Contract Loss: What Courts Allow You to Recover"
         subtitle="The definitive guide to expectation damages, reliance loss, wasted expenditure, consequential loss, and the but-for methodology, for legal practitioners instructing contract loss expert witnesses."
         breadcrumbs={[

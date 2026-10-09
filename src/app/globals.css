@@ -2,13 +2,13 @@
 
 @theme inline {
   --breakpoint-xs: 30rem;
-  --color-primary: #1a2e1a;
-  --color-accent: #c45c3e;
-  --color-highlight: #d4a853;
-  --color-section-alt: #f5f0e8;
-  --color-surface: #faf7f2;
-  --color-border: #ddd5c8;
-  --color-heading: #1a2e1a;
+  --color-primary: #19291a;
+  --color-accent: #bc543a;
+  --color-highlight: #ce9f53;
+  --color-section-alt: #f3eee5;
+  --color-surface: #f9f6f0;
+  --color-border: #e2dacb;
+  --color-heading: #19291a;
   --color-body: #3d3d3d;
   --font-sans: var(--font-plex);
   --font-display: var(--font-fraunces);
@@ -56,7 +56,7 @@ svg {
 }
 
 .prose-content h2 {
-  color: #1a2e1a;
+  color: #19291a;
   font-family: var(--font-fraunces), Georgia, serif;
   font-size: 1.5rem;
   font-weight: 600;
@@ -65,7 +65,7 @@ svg {
 }
 
 .prose-content h3 {
-  color: #1a2e1a;
+  color: #19291a;
   font-family: var(--font-fraunces), Georgia, serif;
   font-size: 1.25rem;
   font-weight: 600;
@@ -90,12 +90,12 @@ svg {
 }
 
 .prose-content a {
-  color: #c45c3e;
+  color: #bc543a;
   text-decoration: underline;
 }
 
 .prose-content a:hover {
-  color: #a34a32;
+  color: #a2452f;
 }
 
 .prose-content table {
@@ -107,19 +107,19 @@ svg {
 
 .prose-content th,
 .prose-content td {
-  border: 1px solid #ddd5c8;
+  border: 1px solid #e2dacb;
   padding: 0.75rem 1rem;
   text-align: left;
 }
 
 .prose-content th {
-  background: #f5f0e8;
-  color: #1a2e1a;
+  background: #f3eee5;
+  color: #19291a;
   font-weight: 600;
 }
 
 .prose-content tr:nth-child(even) td {
-  background: #faf7f2;
+  background: #f9f6f0;
 }
 
 @keyframes fadeIn {
@@ -147,5 +147,49 @@ svg {
   .motion-safe\:animate-\[slideUp_280ms_ease-out\],
   .motion-safe\:animate-\[slideUp_320ms_ease-out\] {
     animation: none !important;
+  }
+}
+
+@layer components {
+  /* The monogram is a page with a folded corner: boxes and photographs borrow that corner. */
+  .dog-ear {
+    position: relative;
+    clip-path: polygon(0 0, calc(100% - var(--ear, 2rem)) 0, 100% var(--ear, 2rem), 100% 100%, 0 100%);
+  }
+
+  .dog-ear::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--ear, 2rem);
+    height: var(--ear, 2rem);
+    background: var(--color-highlight);
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    z-index: 2;
+  }
+}
+
+@keyframes cle-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.cle-rise {
+  animation: cle-rise 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .cle-rise {
+    animation: none;
   }
 }

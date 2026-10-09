@@ -1,12 +1,10 @@
 import { notFound } from "next/navigation";
 import { createMetadata } from "@/lib/metadata";
 import { ContentPageTemplate } from "@/components/ContentPageTemplate";
-import { getSector, sectorSlugs } from "@/data/sectors";
+import { sectorImage } from "@/lib/images";
+import { getSector } from "@/data/sectors";
 import { mergeSectorLinks } from "@/lib/seo-internal-links";
 
-export function generateStaticParams() {
-  return sectorSlugs.map((slug) => ({ slug }));
-}
 
 export async function generateMetadata({
   params,
@@ -35,6 +33,7 @@ export default async function SectorPage({
   return (
     <ContentPageTemplate
       page={page}
+      image={sectorImage[slug]}
       hubPath="/sectors"
       relatedLinks={mergeSectorLinks(slug, page.relatedLinks)}
       breadcrumbs={[

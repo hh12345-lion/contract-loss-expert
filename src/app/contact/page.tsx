@@ -30,6 +30,7 @@ export default function ContactPage() {
         ])}
       />
       <PageHero
+        image="dealTable"
         title="Contact Us"
         subtitle="Share a brief summary of your matter and we will connect you with a qualified contract loss expert witness. All enquiries are confidential."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}

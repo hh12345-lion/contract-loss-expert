@@ -1,12 +1,10 @@
 import { notFound } from "next/navigation";
 import { createMetadata } from "@/lib/metadata";
 import { ContentPageTemplate } from "@/components/ContentPageTemplate";
-import { caseTypes, getCaseType, caseTypeSlugs } from "@/data/case-types";
+import { caseTypeImage } from "@/lib/images";
+import { caseTypes, getCaseType } from "@/data/case-types";
 import { mergeCaseTypeLinks } from "@/lib/seo-internal-links";
 
-export function generateStaticParams() {
-  return caseTypeSlugs.map((slug) => ({ slug }));
-}
 
 export async function generateMetadata({
   params,
@@ -35,6 +33,7 @@ export default async function CaseTypePage({
   return (
     <ContentPageTemplate
       page={page}
+      image={caseTypeImage[slug]}
       hubPath="/case-types"
       relatedLinks={mergeCaseTypeLinks(slug, page.relatedLinks)}
       breadcrumbs={[
